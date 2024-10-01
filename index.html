@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">San Francisco Fitness Form</h1>
+            <p id="description" class="description text-center">
+                Congratulations on starting your fitness journey.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current fitness level?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current fitness level</option>
+                    <option value="student">Sedentary (office job)</option>
+                    <option value="job">Light Exercise (1-2 days/week)</option>
+                    <option value="learner">Moderate Exercise (3-5 days/week)</option>
+                    <option value="preferNo">Heavy Exercise (6-7 days/week)</option>
+                    <option value="other">Athlete (2X per day)</option>
+                </select>
+            </div>
+
+            <div class="form-group"></div>
+            <p>What are your fitness goals?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current fitness goals</option>
+                <option value="student">Gain Muscle</option>
+                <option value="job">Lose Weight</option>
+                <option value="learner">Gain Muscle & Lose Weight</option>
+                <option value="preferNo">Just get more active and healthy</option>
+                <option value="other">Not Sure</option>
+            </select>
+    </div>
+
+    <!-- END QUESTIONS -->
+
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
